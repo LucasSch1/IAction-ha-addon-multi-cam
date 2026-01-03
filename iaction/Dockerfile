@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Create app directory & fetch source code
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends curl unzip \
- && curl -L https://github.com/LucasSch1/IAction/archive/refs/heads/main.zip -o iaction.zip \
+ && curl -L https://github.com/LucasSch1/IAction-ha-addon-multi-cam/archive/refs/heads/main.zip -o iaction.zip \
  && unzip iaction.zip \
  && mv IAction-main/* . \
  && rm -rf iaction.zip IAction-main \
