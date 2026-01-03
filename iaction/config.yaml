@@ -1,5 +1,5 @@
-name: IAction
-slug: iaction
+name: IAction Multi Camera (DEV)
+slug: iaction_multi_camera
 version: "1.8"
 description: "Image analysis (RTSP or HA polling) with AI + MQTT, web UI, and Home Assistant integration"
 url: "https://github.com/lfpoulain/iaction-ha-addon"
