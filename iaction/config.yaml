@@ -19,3 +19,21 @@ map:
   - data:rw
 ports:
   5002/tcp: 5002
+  #TEST
+options:
+  cameras:
+    name: Cameras
+    description: List of Home Assistant camera entities
+    required: true
+    type: list
+    schema:
+      name:
+        type: string
+        required: true
+      entity_id:
+        type: string
+        required: true
+      image_attr:
+        type: string
+        required: false
+        default: entity_picture
