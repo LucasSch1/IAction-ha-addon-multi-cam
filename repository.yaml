@@ -1,4 +1,5 @@
 ﻿name: "IAction Add-ons Repository DEV multi-cams"
-url: "https://github.com/lfpoulain/iaction-ha-addon"
+url: "https://github.com/LucasSch1/IAction-ha-addon-multi-cam"
 maintainer: "lfpoulain"
+modifier: "LucasSch1"
 description: "FORK Home Assistant add-ons for IAction - AI powered image analysis with multi-cams"
