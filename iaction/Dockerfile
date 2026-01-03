@@ -16,7 +16,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Create app directory & fetch source code
 WORKDIR /app
-RUN git clone --depth 1 https://github.com/LucasSch1/IAction.git .
+RUN apt-get update && apt-get install -y --no-install-recommends curl unzip \
+ && curl -L https://github.com/LucasSch1/IAction/archive/refs/heads/main.zip -o iaction.zip \
+ && unzip iaction.zip \
+ && mv IAction-main/* . \
+ && rm -rf iaction.zip IAction-main \
+ && rm -rf /var/lib/apt/lists/*
+
 
 # Create and populate virtual environment
 RUN python -m venv /opt/venv
