@@ -16,12 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Create app directory & fetch source code
 WORKDIR /app
-RUN apt-get update && apt-get install -y --no-install-recommends curl unzip \
- && curl -fL https://codeload.github.com/LucasSch1/IAction-ha-addon-multi-cam/zip/refs/heads/main -o iaction.zip
- && unzip iaction.zip \
- && mv IAction-main/* . \
- && rm -rf iaction.zip IAction-main \
- && rm -rf /var/lib/apt/lists/*
+RUN git clone --depth 1 https://github.com/LucasSch1/IAction.git .
 
 
 # Create and populate virtual environment
